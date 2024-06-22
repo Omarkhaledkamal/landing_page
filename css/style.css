@@ -1,101 +1,69 @@
-/* #1F2937 */
+/*
+
+dark background color (hero and footer)
+#1f2937
+
+hero main text ("this website is awesome")
+48px extra-bold #f9faf8
+
+hero secondary text, header link text
+18px #e5e7eb
+
+header logo text
+24px #f9faf8
+
+button color, call to action background color
+#3882f6
+
+information header text
+36px extra-bold #1f2937
+
+quote section background color
+#e5e7eb
+
+quote text 
+36px light italic #1f2937
+*/
+
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
-  color: white
-}
-
-header {
-  height: 50px;
-  background-color: #1F2937;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  /* color: white; */
-}
-
-.header-logo {
-  font-weight: bold;
-  font-size: 24px;
-  color: #F9FAF8;
-}
-
-footer {
-  margin-top: auto;
-  height: 50px;
-  background-color: #1F2937;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* color: white; */
 }
 
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
-nav ul a,
-.subtext {
-  color: #e5e7eb;
+a {
   text-decoration: none;
   font-size: 18px;
+  color: #e5e7eb;
+}
+
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
 }
 
 
-.one {
+header {
   display: flex;
-  justify-content: space-around;
+  height: 10vh;
+  justify-content: space-between;
   align-items: center;
-  height: 300px;
-  background-color: #1F2937;
-  gap: 50px;
-  padding: 50px;
+  padding: 0 24px;
+  background-color: #1f2937;
 }
 
-.hero-main-text {
-  font-size: 48px;
-  font-weight: 800;
-  color: #F9FAF8;
-}
-
-.left {
+.header-links {
   display: flex;
-  flex-direction: column;
-  width: 500px;
-  height: 250px;
-  gap: 10px;
+  gap: 24px;
 }
-
-.right {
-  background-color: lightblue;
-  width: 500px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left button {
-  background-color: #3882F6;
-  padding: 8px 16px;
-  text-align: center;
-  border-radius: 10px;
-  border: 0;
-  color: #F9FAF8;
-  font-weight: bold;
-  /* font-size: 14px; */
-}
-
