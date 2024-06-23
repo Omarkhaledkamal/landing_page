@@ -28,17 +28,18 @@ quote text
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Robonto", sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -53,17 +54,77 @@ a {
   color: #f9faf8;
 }
 
-
-header {
-  display: flex;
-  height: 10vh;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-  background-color: #1f2937;
-}
-
 .header-links {
   display: flex;
   gap: 24px;
+}
+
+.one,
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header {
+  background-color: #1f2937;
+}
+
+header .header {
+  display: flex;
+  width: 1120px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.one {
+  background-color: #1f2937;
+  height: 500px;
+}
+
+.one section {
+  display: flex;
+  width: 1120px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.one .right {
+  width: 45%;
+}
+
+.one .right img {
+  width: 100%;
+}
+
+.one .left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.one .hero-text {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 800;
+}
+
+.one .hero-sub {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.one .left button {
+  background-color: #3882f6;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #f9faf8;
+  align-self: flex-start;
+  font-size: 15px;
 }
