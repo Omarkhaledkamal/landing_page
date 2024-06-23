@@ -61,7 +61,10 @@ a {
 
 .one,
 header,
-.two {
+.two,
+.three,
+.four,
+.five {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +86,7 @@ section {
   display: flex;
   width: 1120px;
   padding: 20px;
+  height: 500px;
 }
 
 .one {
@@ -131,19 +135,21 @@ section {
   color: #f9faf8;
   align-self: flex-start;
   font-size: 15px;
+  flex-shrink: 0;
 }
 
 .two section{
   display: flex;
   flex-direction: column;
-  height: 500px;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
 }
 
 .two .heading {
-  font-size: 40px;
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 800;
 }
 
 .two .container {
@@ -166,4 +172,82 @@ section {
   justify-content: center;
   align-items: center;
   width: 200px;
+}
+
+.three {
+  background-color: #e5e7eb;
+}
+
+.three section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.three section .quote {
+  font-size : 36px;
+  font-weight: 100;
+  font-style: italic;
+  color: #1f2937;
+  width: 75%;
+}
+
+.three section .quoter {
+  font-weight: bold;
+  font-size: 20px;
+  width: 75%;
+  text-align: end;
+}
+
+.four section {
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.four .container {
+  background-color: #3882f6;
+  width: 100%;
+  display: flex;
+  height: 150px;
+  border-radius: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.four .container h3,
+.four .container button {
+  color: white;
+}
+
+.four .container button {
+  background-color: #3882f6;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.four .container p {
+  color: #e5e7eb;
+}
+
+.five {
+  background-color: #1f2937;
+  margin-top: auto;
+  height: 100px;
+}
+
+.five footer {
+  width: 1120px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
